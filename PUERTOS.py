@@ -15,8 +15,8 @@ def grab_banner(ip, port):
 if len(sys.argv) == 2:
     target = socket.gethostbyname(sys.argv[1])
 else:
-    print("Argumentos no válida.")
-    print("Sintaxis: python3 port_scanner.py <ip>")
+    print("No válido")
+    print("Sintaxis: port_scanner.py <ip>")
     sys.exit(1)
 print("-" * 50)
 print(f"Escaneando objetivo: {target}")
@@ -34,13 +34,13 @@ try:
                 print(f"[+] Puerto {port}: ABIERTO - {banner}")
                 open_ports += 1
 except KeyboardInterrupt:
-    print("\n[!] Saliendo del programa.")
+    print("\n[!] Saliendo")
     sys.exit()
 except socket.gaierror:
-    print("\n[!] No se puede resolver el Hostname.")
+    print("\n[!] No se puede resolver")
     sys.exit()
 except socket.error:
-    print("\n[!] No se puede conectar al servidor.")
+    print("\n[!] No se puede conectar")
     sys.exit()
 end_time = datetime.now()
 total_time = end_time - start_time
@@ -48,3 +48,4 @@ print("\n" + "-" * 50)
 print(f"Escaneo completado en: {total_time}")
 print(f"Puertos abiertos encontrados: {open_ports}")
 print("-" * 50)
+
