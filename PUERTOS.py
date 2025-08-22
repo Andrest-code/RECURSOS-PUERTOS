@@ -33,7 +33,6 @@ try:
                 banner = grab_banner(target, port)
                 print(f"[+] Puerto {port}: ABIERTO - {banner}")
                 open_ports += 1
-
 except KeyboardInterrupt:
     print("\n[!] Saliendo del programa.")
     sys.exit()
@@ -49,4 +48,3 @@ print("\n" + "-" * 50)
 print(f"Escaneo completado en: {total_time}")
 print(f"Puertos abiertos encontrados: {open_ports}")
 print("-" * 50)
-
