@@ -1,14 +1,14 @@
-> .[!NOTE].
+> [!NOTE]
 > NOTA 1
 
-> .[!TIP].
+> [!TIP]
 > NOTA 2
 
-> .[!IMPORTANT].
+> [!IMPORTANT]
 > NOTA 3
 
-> .[!WARNING].
+> [!WARNING]
 > NOTA 4
 
-> .[!CAUTION].
+> [!CAUTION]
 > NOTA 5
